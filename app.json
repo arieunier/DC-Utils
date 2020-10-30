@@ -16,6 +16,6 @@
     {"plan": "coralogix:dev"},
     {"plan": "heroku-postgresql:hobby-dev"},
     {"plan": "heroku-redis:hobby-dev"},
-    {"plan": "heroku-connect:demo"}
+    {"plan": "herokuconnect:demo"}
   ]
 }
