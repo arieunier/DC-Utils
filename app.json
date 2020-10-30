@@ -1,0 +1,21 @@
+{
+  "name": "Distributed Compute - Utils ",
+  "description" : "This part will host all Heroku Addons we will share with the rest of the applications.",
+  "repository":"https://github.com/arieunier/DC-Utils",
+  "scripts": {
+    },
+  "formation": {
+    "cometdlistener" : {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
+  "addons": [
+    {"plan": "bucketeer:hobbyist"},
+    {"plan": "cloudamqp:tiger"},
+    {"plan": "coralogix:dev"},
+    {"plan": "heroku-postgresql:hobby-dev"},
+    {"plan": "heroku-redis:hobby-dev"},
+    {"plan": "heroku-connect:demo"}
+  ]
+}
