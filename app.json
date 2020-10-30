@@ -13,7 +13,7 @@
   "addons": [
     {"plan": "bucketeer:hobbyist"},
     {"plan": "cloudamqp:lemur"},
-    {"plan": "coralogix:free"},
+    {"plan": "coralogix:free-30mbday"},
     {"plan": "heroku-postgresql:hobby-dev"},
     {"plan": "heroku-redis:hobby-dev"},
     {"plan": "herokuconnect:demo"}
