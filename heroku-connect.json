@@ -1,0 +1,82 @@
+{
+  "mappings": [
+    {
+      "object_name": "Opportunity",
+      "config": {
+        "indexes": {
+          "SystemModstamp": {
+            "unique": false
+          },
+          "Id": {
+            "unique": true
+          },
+          "externalid__c": {
+            "unique": true
+          }
+        },
+        "sf_max_daily_api_calls": 30000,
+        "access": "read_write",
+        "upsert_field": "externalid__c",
+        "applied_at": "2020-10-22T09:53:08.694705Z",
+        "sf_polling_seconds": 600,
+        "sf_notify_enabled": true,
+        "fields": {
+          "ExpectedRevenue": {},
+          "CloseDate": {},
+          "AccountId": {},
+          "StageName": {},
+          "Name": {},
+          "OwnerId": {},
+          "IsDeleted": {},
+          "SystemModstamp": {},
+          "CreatedDate": {},
+          "Amount": {},
+          "Type": {},
+          "Id": {},
+          "FiscalYear": {},
+          "Description": {},
+          "externalid__c": {}
+        }
+      }
+    },
+    {
+      "object_name": "User",
+      "config": {
+        "access": "read_only",
+        "sf_notify_enabled": false,
+        "sf_polling_seconds": 600,
+        "sf_max_daily_api_calls": 30000,
+        "fields": {
+          "CreatedDate": {},
+          "Id": {},
+          "Name": {},
+          "SystemModstamp": {},
+          "Username": {}
+        },
+        "indexes": {
+          "Id": {
+            "unique": true
+          },
+          "SystemModstamp": {
+            "unique": false
+          }
+        }
+      }
+    }
+  ],
+  "connection": {
+    "app_name": "mb-mvp-utils",
+    "organization_id": "00D0x000000B7DZEA0",
+    "exported_at": "2020-11-03T09:59:05.546328+00:00",
+    "features": {
+      "disable_bulk_writes": false,
+      "poll_db_no_merge": true,
+      "poll_external_ids": false,
+      "rest_count_only": false
+    },
+    "api_version": "49.0",
+    "name": "",
+    "logplex_log_enabled": false
+  },
+  "version": 1
+}
